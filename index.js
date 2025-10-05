@@ -174,5 +174,5 @@ client.on("messageCreate", async (msg) => {
   }
 });
 
-// login to Discord
+// login to Discord//
 client.login(process.env.DISCORD_TOKEN);
