@@ -1,6 +1,7 @@
+//Bot import here
 import "dotenv/config";
 import { Client, GatewayIntentBits } from "discord.js";
-import { GoogleGenerativeAI } from "@google/generative-ai"; // ✅ FIXED HERE
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import Groq from "groq-sdk";
 
 
@@ -149,7 +150,7 @@ client.on("messageCreate", async (msg) => {
 
     // --- Groq fallback ---
     const completion = await groq.chat.completions.create({
-      model: "llama-3.1-8b-instant", // ✅ updated model
+      model: "llama-3.1-8b-instant", // Model Ai
       messages: [
         {
           role: "system",
